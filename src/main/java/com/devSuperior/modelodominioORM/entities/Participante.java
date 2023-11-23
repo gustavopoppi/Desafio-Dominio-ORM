@@ -2,6 +2,9 @@ package com.devSuperior.modelodominioORM.entities;
 
 import jakarta.persistence.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 public class Participante {
 
@@ -11,6 +14,10 @@ public class Participante {
     private String nome;
     @Column(unique = true)
     private String email;
+
+    @ManyToMany(mappedBy = "participantes")
+    private Set<Atividade> atividades = new HashSet<>();
+
 
     public Participante() {
     }
