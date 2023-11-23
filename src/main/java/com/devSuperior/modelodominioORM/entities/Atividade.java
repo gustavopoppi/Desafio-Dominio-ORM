@@ -2,6 +2,9 @@ package com.devSuperior.modelodominioORM.entities;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class Atividade {
 
@@ -15,6 +18,20 @@ public class Atividade {
     @ManyToOne
     @JoinColumn(name = "categoria_id")
     private Categoria categoria;
+
+    @OneToMany(mappedBy = "atividade")
+    private List<Bloco> blocos = new ArrayList<>();
+
+    public Atividade() {
+    }
+
+    public Atividade(Long id, String nome, String descricao, Double preco, Categoria categoria) {
+        this.id = id;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.categoria = categoria;
+    }
 
     public Long getId() {
         return id;
@@ -54,5 +71,9 @@ public class Atividade {
 
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
+    }
+
+    public List<Bloco> getBlocos() {
+        return blocos;
     }
 }
