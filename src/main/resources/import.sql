@@ -15,7 +15,6 @@ INSERT INTO PARTICIPANTE(nome, email) VALUES('Teresa Silva', 'teresa@gmail.com')
 
 INSERT INTO ATIVIDADE_PARTICIPANTE(atividade_id, participante_id) VALUES (1, 1);
 INSERT INTO ATIVIDADE_PARTICIPANTE(atividade_id, participante_id) VALUES (1, 2);
-INSERT INTO ATIVIDADE_PARTICIPANTE(atividade_id, participante_id) VALUES (2, 1);
-INSERT INTO ATIVIDADE_PARTICIPANTE(atividade_id, participante_id) VALUES (3, 1);
-INSERT INTO ATIVIDADE_PARTICIPANTE(atividade_id, participante_id) VALUES (3, 2);
-INSERT INTO ATIVIDADE_PARTICIPANTE(atividade_id, participante_id) VALUES (4, 2);
+INSERT INTO ATIVIDADE_PARTICIPANTE(atividade_id, participante_id) VALUES (1, 3);
+INSERT INTO ATIVIDADE_PARTICIPANTE(atividade_id, participante_id) VALUES (2, 3);
+INSERT INTO ATIVIDADE_PARTICIPANTE(atividade_id, participante_id) VALUES (2, 4);
