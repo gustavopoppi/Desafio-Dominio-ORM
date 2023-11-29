@@ -1,5 +1,7 @@
 INSERT INTO CATEGORIA(descricao) VALUES('Curso');
-INSERT INTO CATEGORIA(descricao) VALUES('Oficina')
+INSERT INTO CATEGORIA(descricao) VALUES('Oficina');
+INSERT INTO CATEGORIA(descricao) VALUES('Workshop');
+INSERT INTO CATEGORIA(descricao) VALUES('Intensivo');
 
 INSERT INTO ATIVIDADE(nome, descricao, preco, categoria_id) VALUES ('Curso de HTML', 'Aprenda HTML de forma prática', 80.00, 1);
 INSERT INTO ATIVIDADE(nome, descricao, preco, categoria_id) VALUES ('Oficina de Github', 'Controle versões de seus projetos', 50.00, 2);
